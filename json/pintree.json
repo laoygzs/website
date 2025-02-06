@@ -384,6 +384,13 @@
                 "title": "公版影像典藏计划",
                 "icon": "https://logo.clearbit.com/public.163.com",
                 "url": "https://public.163.com/#/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815195432,
+                "title": "国外的免费纪录片",
+                "icon": "https://logo.clearbit.com/ihavenotv.com",
+                "url": "https://ihavenotv.com/"
               }
             ]
           },
@@ -866,7 +873,7 @@
           {
             "type": "folder",
             "addDate": 1730901627923,
-            "title": "06体育直播",
+            "title": "06体育、电视、直播",
             "children": [
               {
                 "type": "link",
@@ -986,6 +993,20 @@
                 "title": "电视眼 - 网络电视直播网，CCTV、卫视、体育直播在线观看，高清免费可回看",
                 "icon": "https://logo.clearbit.com/www.tvyan.com",
                 "url": "https://www.tvyan.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812688937,
+                "title": "广播迷:在线听广播、看电视",
+                "icon": "https://logo.clearbit.com/www.guangbomi.com",
+                "url": "http://www.guangbomi.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812785927,
+                "title": "在线免费观看｜多线路IPTV直播源在线视频播放器",
+                "icon": "https://logo.clearbit.com/zqjy.info",
+                "url": "http://zqjy.info/t/"
               }
             ]
           }
@@ -1735,6 +1756,13 @@
                 "title": "免费英文电子书",
                 "icon": "https://logo.clearbit.com/www.obooko.com",
                 "url": "https://www.obooko.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812009964,
+                "title": "外文刊物",
+                "icon": "https://logo.clearbit.com/mgreader.com",
+                "url": "https://mgreader.com/"
               }
             ]
           },
@@ -1966,6 +1994,13 @@
                 "title": "🌈️包子漫画",
                 "icon": "https://logo.clearbit.com/cn.baozimhcn.com",
                 "url": "https://cn.baozimhcn.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815227366,
+                "title": "动漫台词搜",
+                "icon": "https://logo.clearbit.com/dialogue.moe",
+                "url": "https://dialogue.moe/"
               }
             ]
           },
@@ -2379,6 +2414,34 @@
                 "title": "小鱼速读经典阅读视频",
                 "icon": "https://logo.clearbit.com/www.xysudu.com",
                 "url": "http://www.xysudu.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812768997,
+                "title": "熊猫速读",
+                "icon": "https://logo.clearbit.com/qread.xmsoushu.com",
+                "url": "https://qread.xmsoushu.com/"
+              }
+            ]
+          },
+          {
+            "type": "folder",
+            "addDate": 1738811618778,
+            "title": "10相关软件",
+            "children": [
+              {
+                "type": "link",
+                "addDate": 1738811598800,
+                "title": "轻量pdf工具.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanzouj.com",
+                "url": "https://ilaoygzs.lanzouj.com/itFal1jwywnc"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814742234,
+                "title": "PDF转Word转换器 - 免费、快速且准确",
+                "icon": "https://logo.clearbit.com/www.pdf2docx.cn",
+                "url": "https://www.pdf2docx.cn/"
               }
             ]
           }
@@ -2491,6 +2554,13 @@
                 "title": "PPT模板_PPT模板免费下载_免费PPT模板下载网站 -【PPT汇】",
                 "icon": "https://logo.clearbit.com/www.ppthui.com",
                 "url": "https://www.ppthui.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1734055225805,
+                "title": "HiPPTER | PPT资源导航 | PPT模板图表等设计素材免费下载",
+                "icon": "https://logo.clearbit.com/www.hippter.com",
+                "url": "https://www.hippter.com/"
               },
               {
                 "type": "link",
@@ -2860,6 +2930,27 @@
                     "title": "emoji搜索引擎",
                     "icon": "https://logo.clearbit.com/searchemoji.app",
                     "url": "https://searchemoji.app/zh-hans"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738812456773,
+                    "title": "3D图标",
+                    "icon": "https://logo.clearbit.com/3dicons.co",
+                    "url": "https://3dicons.co/"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738812477252,
+                    "title": "自动获取网站的图标",
+                    "icon": "https://logo.clearbit.com/favicon.vwood.xyz",
+                    "url": "https://favicon.vwood.xyz/"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738812562070,
+                    "title": "图标编辑器",
+                    "icon": "https://logo.clearbit.com/iconce.com",
+                    "url": "https://iconce.com/"
                   }
                 ]
               },
@@ -3098,6 +3189,13 @@
                     "title": "PNGDirs - 空白透明背景免抠PNG图片素材免费下载网站",
                     "icon": "https://logo.clearbit.com/www.pngdirs.com",
                     "url": "https://www.pngdirs.com/"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738812849717,
+                    "title": "卡通风格插图",
+                    "icon": "https://logo.clearbit.com/www.irasutoya.com",
+                    "url": "https://www.irasutoya.com/"
                   }
                 ]
               },
@@ -3252,6 +3350,13 @@
                     "title": "免版权图片展",
                     "icon": "https://logo.clearbit.com/photosku.com",
                     "url": "https://photosku.com/"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738811411756,
+                    "title": "超棒的纹理图案",
+                    "icon": "https://logo.clearbit.com/russfuss.com",
+                    "url": "https://russfuss.com/most-popular/"
                   }
                 ]
               },
@@ -3357,6 +3462,27 @@
                     "title": "wallhaven壁纸镜子站",
                     "icon": "https://logo.clearbit.com/wallhaven.icu",
                     "url": "https://wallhaven.icu/"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738812298648,
+                    "title": "拾光壁纸 - 干净、舒适、流畅的壁纸网站",
+                    "icon": "https://logo.clearbit.com/snake.timeline.ink",
+                    "url": "https://snake.timeline.ink/"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738812391369,
+                    "title": "无人机拍摄的照片和视频",
+                    "icon": "https://logo.clearbit.com/www.skypixel.com",
+                    "url": "https://www.skypixel.com/"
+                  },
+                  {
+                    "type": "link",
+                    "addDate": 1738814691062,
+                    "title": "强大的AI壁纸",
+                    "icon": "https://logo.clearbit.com/aiwallpaper.shop",
+                    "url": "https://aiwallpaper.shop/"
                   }
                 ]
               }
@@ -3548,6 +3674,13 @@
                 "title": "毛笔字在线生成器_毛笔字体转换器_毛笔书法楷书作品字帖-真好毛笔体网",
                 "icon": "https://logo.clearbit.com/www.zhenhaotv.com",
                 "url": "https://www.zhenhaotv.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814920174,
+                "title": "小米开源字体",
+                "icon": "https://logo.clearbit.com/hyperos.mi.com",
+                "url": "https://hyperos.mi.com/font/zh/"
               }
             ]
           },
@@ -4199,6 +4332,13 @@
                 "title": "大师之路PS教程",
                 "icon": "https://logo.clearbit.com/99ut.blueidea.com",
                 "url": "http://99ut.blueidea.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815306108,
+                "title": "免费的3D模型",
+                "icon": "https://logo.clearbit.com/www.thebasemesh.com",
+                "url": "https://www.thebasemesh.com/model-library"
               }
             ]
           },
@@ -4304,13 +4444,6 @@
                 "title": "在线图片格式转换器、JPG/GIF/PNG/WEBP/HEIC图片文件类型在线修改 - 改图宝",
                 "icon": "https://logo.clearbit.com/www.gaitubao.com",
                 "url": "https://www.gaitubao.com/jpg-gif-png/"
-              },
-              {
-                "type": "link",
-                "addDate": 1710143270000,
-                "title": "图片文字识别软件 – 在线图片文字识别 – 迅捷PDF转换器在线免费版",
-                "icon": "https://logo.clearbit.com/app.xunjiepdf.com",
-                "url": "https://app.xunjiepdf.com/ocr"
               },
               {
                 "type": "link",
@@ -4493,13 +4626,6 @@
                 "title": "Look Scanned",
                 "icon": "https://logo.clearbit.com/zh.lookscanned.io",
                 "url": "https://zh.lookscanned.io/"
-              },
-              {
-                "type": "link",
-                "addDate": 1710143476000,
-                "title": "图片转文字在线 - 图片文字提取 - 网页OCR文字识别 - 白描网页版",
-                "icon": "https://logo.clearbit.com/web.baimiaoapp.com",
-                "url": "https://web.baimiaoapp.com/"
               },
               {
                 "type": "link",
@@ -4892,6 +5018,20 @@
                 "title": "制作程序图标",
                 "icon": "https://logo.clearbit.com/icon.kitchen",
                 "url": "https://icon.kitchen/i/H4sIAAAAAAAAA6tWKkvMKU0tVrKqVkpJLMoOyUjNTVWySkvMKU6t1VHKzU8pzQHJRisl5qUU5WemKOkoZeYXA8ny1CSl2FoApT8%2BHkAAAAA%3D"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812594898,
+                "title": "在线免费图片编辑器，带有图片效果和照片滤镜库",
+                "icon": "https://logo.clearbit.com/photofunia.com",
+                "url": "https://photofunia.com/cn/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812740180,
+                "title": "免费画板",
+                "icon": "https://logo.clearbit.com/songlh.top",
+                "url": "https://songlh.top/paint-board/"
               }
             ]
           }
@@ -5291,6 +5431,13 @@
                 "title": "不求人快搜 - 网盘 | 微书签",
                 "icon": "https://logo.clearbit.com/bookmark.bqrdh.com",
                 "url": "https://bookmark.bqrdh.com/fs/wp"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812099837,
+                "title": "秒搜-强大的网盘搜索引擎|百度|阿里|夸克",
+                "icon": "https://logo.clearbit.com/miaosou.fun",
+                "url": "https://miaosou.fun/"
               }
             ]
           },
@@ -5815,7 +5962,7 @@
                 "addDate": 1710124779000,
                 "title": "一听音乐网_歌曲大全::免费网络在线正版音乐站",
                 "icon": "https://logo.clearbit.com/www.1ting.com",
-                "url": "https://www.1ting.com/?ref=www.9eip.com"
+                "url": "https://www.1ting.com/"
               },
               {
                 "type": "link",
@@ -6978,6 +7125,27 @@
                 "title": "听力特快-英语听力下载,VOA慢速英语听力下载,CNN英语听力下载",
                 "icon": "https://logo.clearbit.com/www.listeningexpress.com",
                 "url": "https://www.listeningexpress.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811570734,
+                "title": "划词翻译_v2.7.3 便携版.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanzouj.com",
+                "url": "https://ilaoygzs.lanzouj.com/iMEeP1jwywkj"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814840004,
+                "title": "沉浸式翻译 - 文档双语翻译：一键翻译 PDF，ePub 电子书，字幕文件，txt 文件",
+                "icon": "https://logo.clearbit.com/app.immersivetranslate.com",
+                "url": "https://app.immersivetranslate.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815076708,
+                "title": "中英文阅读名著",
+                "icon": "https://logo.clearbit.com/ip.tanglib.com",
+                "url": "http://ip.tanglib.com:31913/"
               }
             ]
           },
@@ -8063,6 +8231,20 @@
                 "title": "插件小屋 - Chrome插件,谷歌浏览器扩展下载,Chrome应用商店,离线安装包下载,crx扩展安装",
                 "icon": "https://logo.clearbit.com/www.chajianxw.com",
                 "url": "https://www.chajianxw.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811505792,
+                "title": "Explore and download Chrome extensions | iLoveChrome",
+                "icon": "https://logo.clearbit.com/www.ilovechrome.com",
+                "url": "https://www.ilovechrome.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811525760,
+                "title": "插件迷 - Chrome插件下载 扩展推荐 crx下载 extfans",
+                "icon": "https://logo.clearbit.com/www.chajianmi.com",
+                "url": "https://www.chajianmi.com/"
               }
             ]
           },
@@ -8259,6 +8441,20 @@
                 "title": "PKeyToolWeb 微软产品激活工具箱",
                 "icon": "https://logo.clearbit.com/pkeytool.com",
                 "url": "https://pkeytool.com/ShareKeys"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811927798,
+                "title": "MSDN原版Office下载 - MSDN系统库",
+                "icon": "https://logo.clearbit.com/www.xitongku.com",
+                "url": "https://www.xitongku.com/office.html"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812488434,
+                "title": "MSDN - 刘志进实验室",
+                "icon": "https://logo.clearbit.com/msdn.liuzhijin.cn",
+                "url": "https://msdn.liuzhijin.cn/"
               }
             ]
           },
@@ -8579,8 +8775,57 @@
           },
           {
             "type": "folder",
+            "addDate": 1738812180282,
+            "title": "08文字识别",
+            "children": [
+              {
+                "type": "link",
+                "addDate": 1710143270000,
+                "title": "图片文字识别软件 – 在线图片文字识别 – 迅捷PDF转换器在线免费版",
+                "icon": "https://logo.clearbit.com/app.xunjiepdf.com",
+                "url": "https://app.xunjiepdf.com/ocr"
+              },
+              {
+                "type": "link",
+                "addDate": 1710143476000,
+                "title": "图片转文字在线 - 图片文字提取 - 网页OCR文字识别 - 白描网页版",
+                "icon": "https://logo.clearbit.com/web.baimiaoapp.com",
+                "url": "https://web.baimiaoapp.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1720075972000,
+                "title": "离线OCR文字识别.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanzouj.com",
+                "url": "https://ilaoygzs.lanzouj.com/idoUJ10zw4zi"
+              },
+              {
+                "type": "link",
+                "addDate": 1720079504000,
+                "title": "OLOCR - 简体中文OCR、无限制图片文字识别、在线图片文字识别、PDF文字识别、批量图片文字识别",
+                "icon": "https://logo.clearbit.com/olocr.com",
+                "url": "https://olocr.com/ocr?l=chinese_simplified"
+              },
+              {
+                "type": "link",
+                "addDate": 1722410066000,
+                "title": "免费在线文字识别工具",
+                "icon": "https://logo.clearbit.com/ocr.plantree.me",
+                "url": "https://ocr.plantree.me/ocr"
+              },
+              {
+                "type": "link",
+                "addDate": 1728315246000,
+                "title": "CatOCR: 易飞文字识别, 免费在线图片转文字",
+                "icon": "https://logo.clearbit.com/catocr.com",
+                "url": "https://catocr.com/#/"
+              }
+            ]
+          },
+          {
+            "type": "folder",
             "addDate": 1730901627959,
-            "title": "08健康医疗",
+            "title": "09健康医疗",
             "children": [
               {
                 "type": "link",
@@ -8622,7 +8867,7 @@
           {
             "type": "folder",
             "addDate": 1730901627959,
-            "title": "09短视频解析下载",
+            "title": "10短视频解析下载",
             "children": [
               {
                 "type": "link",
@@ -8769,7 +9014,7 @@
           {
             "type": "folder",
             "addDate": 1730901627960,
-            "title": "10热榜消息综合",
+            "title": "11热榜消息综合",
             "children": [
               {
                 "type": "link",
@@ -8867,7 +9112,7 @@
           {
             "type": "folder",
             "addDate": 1732156162091,
-            "title": "11临时邮箱",
+            "title": "12临时邮箱",
             "children": [
               {
                 "type": "link",
@@ -8902,7 +9147,7 @@
           {
             "type": "folder",
             "addDate": 1733729437992,
-            "title": "12宝妈宝爸",
+            "title": "13宝妈宝爸",
             "children": [
               {
                 "type": "link",
@@ -10177,6 +10422,34 @@
                 "title": "扫雷网 Saolei.wang - 扫雷,扫雷排行,扫雷录像,扫雷下载,扫雷教程,扫雷纪录,扫雷高手,扫雷玩家,扫雷论坛,扫雷秘籍,扫雷技巧,Minesweeper,Minesweeper Clone",
                 "icon": "https://logo.clearbit.com/www.saolei.wang",
                 "url": "http://www.saolei.wang/Main/Index.asp"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812511480,
+                "title": "小游戏合集",
+                "icon": "https://logo.clearbit.com/tugulu.games",
+                "url": "https://tugulu.games/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812532694,
+                "title": "通过圆规、直尺等工具，让你在线做题",
+                "icon": "https://logo.clearbit.com/www.euclidea.xyz",
+                "url": "https://www.euclidea.xyz/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814804740,
+                "title": "网页端像素射击游戏",
+                "icon": "https://logo.clearbit.com/bandit.rip",
+                "url": "https://bandit.rip/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814896904,
+                "title": "海苔 - 在线解谜游戏",
+                "icon": "https://logo.clearbit.com/cn.puzzle-norinori.com",
+                "url": "https://cn.puzzle-norinori.com/"
               }
             ]
           },
@@ -11213,6 +11486,48 @@
                 "title": "AI总结论文",
                 "icon": "https://logo.clearbit.com/www.talk2arxiv.org",
                 "url": "https://www.talk2arxiv.org/pdf/1706.03762.pdf"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811550120,
+                "title": "文字转语音_v2306 绿色便携版.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanzouj.com",
+                "url": "https://ilaoygzs.lanzouj.com/i0daz1jwywrg"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811704360,
+                "title": "Drawing Prompt: AI-Powered Prompts Generator",
+                "icon": "https://logo.clearbit.com/drawing-prompt.com",
+                "url": "https://drawing-prompt.com/en"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812316416,
+                "title": "AI换/脸",
+                "icon": "https://logo.clearbit.com/www.changeface.online",
+                "url": "https://www.changeface.online/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814650098,
+                "title": "AI照片修复、上色、去除背景",
+                "icon": "https://logo.clearbit.com/www.oldpicrestore.com",
+                "url": "https://www.oldpicrestore.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815017798,
+                "title": "阿里图片上色.rar官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘",
+                "icon": "https://logo.clearbit.com/www.123pan.com",
+                "url": "https://www.123pan.com/s/Rak9-mvZ7v.html"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815054926,
+                "title": "ai生成图标",
+                "icon": "https://logo.clearbit.com/ai-icon.top",
+                "url": "https://ai-icon.top/"
               }
             ]
           },
@@ -11375,7 +11690,7 @@
       {
         "type": "folder",
         "addDate": 1730901627974,
-        "title": "杂七杂八",
+        "title": "11杂七杂八",
         "children": [
           {
             "type": "folder",
@@ -11969,6 +12284,34 @@
                 "title": "自动任务.zip - 蓝奏云",
                 "icon": "https://logo.clearbit.com/ilaoygzs.lanzouj.com",
                 "url": "https://ilaoygzs.lanzouj.com/iM3DY1iwvfud"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812652548,
+                "title": "Whisper 转录音频文件_v1.8 汉化版.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanpw.com",
+                "url": "https://ilaoygzs.lanpw.com/ixbsc1lgr2gj"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812667677,
+                "title": "Privacy Erar Free 隐清理工具_v6.2.2 便携版.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanpw.com",
+                "url": "https://ilaoygzs.lanpw.com/iiKuL1lgr2fi"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812675799,
+                "title": "Auto Mouse 极速动鼠标点击器_v1.0.5_绿色便携专业版.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanpw.com",
+                "url": "https://ilaoygzs.lanpw.com/iMbIx1lgr2be"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815030058,
+                "title": "视频剪辑_v8.3.9.514 免费版.zip官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘",
+                "icon": "https://logo.clearbit.com/www.123pan.com",
+                "url": "https://www.123pan.com/s/Rak9-xvZ7v.html"
               }
             ]
           },
@@ -13201,6 +13544,97 @@
                 "title": "热门网站查看",
                 "icon": "https://logo.clearbit.com/zh.semrush.com",
                 "url": "https://zh.semrush.com/trending-websites/global/all"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811635554,
+                "title": "商品猜价格小游戏",
+                "icon": "https://logo.clearbit.com/guesstheprice.net",
+                "url": "https://guesstheprice.net/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811961110,
+                "title": "我知道你的宠物在想什么！",
+                "icon": "https://logo.clearbit.com/iknowwhatyourcatisthinking.netlify.app",
+                "url": "https://iknowwhatyourcatisthinking.netlify.app/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811997446,
+                "title": "程序员音乐",
+                "icon": "https://logo.clearbit.com/musicforprogramming.net",
+                "url": "https://musicforprogramming.net/latest/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811914752,
+                "title": "乐高圣经故事",
+                "icon": "https://logo.clearbit.com/thebrickbible.com",
+                "url": "https://thebrickbible.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812351910,
+                "title": "免费在线梗图编辑器",
+                "icon": "https://logo.clearbit.com/memesmarkers.com",
+                "url": "https://memesmarkers.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812722286,
+                "title": "漫游宇宙",
+                "icon": "https://logo.clearbit.com/ww25.cocosmos.online",
+                "url": "https://ww25.cocosmos.online/?subid1=20250206-1431-59d3-a7aa-2cafba0ee2d2"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812810933,
+                "title": "紫微派 | ziwei.pub | 紫微斗数在线排盘",
+                "icon": "https://logo.clearbit.com/ziwei.pub",
+                "url": "https://ziwei.pub/astrolabe/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738812822263,
+                "title": "热爱诗词的网友制作的开源项目",
+                "icon": "https://logo.clearbit.com/shici.honmaple.com",
+                "url": "https://shici.honmaple.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814666180,
+                "title": "坐车避免阳光照射",
+                "icon": "https://logo.clearbit.com/sitinshade.com",
+                "url": "https://sitinshade.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814715138,
+                "title": "大盘云图 -大盘走势，尽在掌握!【官网】",
+                "icon": "https://logo.clearbit.com/dapanyuntu.com",
+                "url": "https://dapanyuntu.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814772678,
+                "title": "刮刮乐模拟器 - gua.shadiao.pro",
+                "icon": "https://logo.clearbit.com/gua.shadiao.pro",
+                "url": "https://gua.shadiao.pro/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815291130,
+                "title": "碳排放实时数据地图",
+                "icon": "https://logo.clearbit.com/carbonmonitor-graced.com",
+                "url": "https://carbonmonitor-graced.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815335484,
+                "title": "清朝地图",
+                "icon": "https://logo.clearbit.com/qingmaps.org",
+                "url": "https://qingmaps.org/"
               }
             ]
           },
@@ -13421,13 +13855,6 @@
               },
               {
                 "type": "link",
-                "addDate": 1720075972000,
-                "title": "离线OCR文字识别.zip - 蓝奏云",
-                "icon": "https://logo.clearbit.com/ilaoygzs.lanzouj.com",
-                "url": "https://ilaoygzs.lanzouj.com/idoUJ10zw4zi"
-              },
-              {
-                "type": "link",
                 "addDate": 1720076010000,
                 "title": "如何学习，打造超人學習",
                 "icon": "https://logo.clearbit.com/github.com",
@@ -13488,13 +13915,6 @@
                 "title": "音频智能降噪",
                 "icon": "https://logo.clearbit.com/podcast.adobe.com",
                 "url": "https://podcast.adobe.com/enhance#"
-              },
-              {
-                "type": "link",
-                "addDate": 1720079504000,
-                "title": "OLOCR - 简体中文OCR、无限制图片文字识别、在线图片文字识别、PDF文字识别、批量图片文字识别",
-                "icon": "https://logo.clearbit.com/olocr.com",
-                "url": "https://olocr.com/ocr?l=chinese_simplified"
               },
               {
                 "type": "link",
@@ -13579,13 +13999,6 @@
                 "title": "证件照片制作",
                 "icon": "https://logo.clearbit.com/xpassportphoto.com",
                 "url": "https://xpassportphoto.com/"
-              },
-              {
-                "type": "link",
-                "addDate": 1722410066000,
-                "title": "免费在线文字识别工具",
-                "icon": "https://logo.clearbit.com/ocr.plantree.me",
-                "url": "https://ocr.plantree.me/ocr"
               },
               {
                 "type": "link",
@@ -13939,13 +14352,6 @@
               },
               {
                 "type": "link",
-                "addDate": 1728315246000,
-                "title": "CatOCR: 易飞文字识别, 免费在线图片转文字",
-                "icon": "https://logo.clearbit.com/catocr.com",
-                "url": "https://catocr.com/#/"
-              },
-              {
-                "type": "link",
                 "addDate": 1728315269000,
                 "title": "查房价网",
                 "icon": "https://logo.clearbit.com/fangjia.fang.com",
@@ -14104,8 +14510,197 @@
                 "title": "法律文库",
                 "icon": "https://logo.clearbit.com/www.justlaws.cn",
                 "url": "https://www.justlaws.cn/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738811657269,
+                "title": "云鸽 - 文件传输助手网页版",
+                "icon": "https://logo.clearbit.com/yunge.in",
+                "url": "https://yunge.in/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814727727,
+                "title": "文件密码柜",
+                "icon": "https://logo.clearbit.com/share.lanol.cn",
+                "url": "https://share.lanol.cn/#/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814907644,
+                "title": "Typing | 在线打字练习与键盘测试 - 倒计时/计时/自定义/PK模式 - 自定义主题与字体",
+                "icon": "https://logo.clearbit.com/typing.yasinchan.com",
+                "url": "https://typing.yasinchan.com/"
+              },
+              {
+                "type": "link",
+                "addDate": 1738814989048,
+                "title": "Freeplane 免费开源版思维导图.zip - 蓝奏云",
+                "icon": "https://logo.clearbit.com/ilaoygzs.lanpw.com",
+                "url": "https://ilaoygzs.lanpw.com/iG3Aq1mcwxqh"
+              },
+              {
+                "type": "link",
+                "addDate": 1738815262896,
+                "title": "开源项目-镜像站点",
+                "icon": "https://logo.clearbit.com/kkgithub.com",
+                "url": "https://kkgithub.com/runningcheese/MirrorSite"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "folder",
+        "addDate": 1738811797348,
+        "title": "12公众号分享的技巧文章",
+        "children": [
+          {
+            "type": "link",
+            "addDate": 1738811740692,
+            "title": "教大家如何搞，“高清美图”",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s/zjvYE0JmCNojj4AkHDbLrw?token=1373599693&lang=zh_CN"
+          },
+          {
+            "type": "link",
+            "addDate": 1738811879204,
+            "title": "如何将别人或者自己的网易云/QQ音乐歌单，迁移到其他平台",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s/mlLvvjFMb_iauycelXlunA?token=1373599693&lang=zh_CN"
+          },
+          {
+            "type": "link",
+            "addDate": 1738812045319,
+            "title": "女神的声音克隆",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s/Xd2JdylLeIWggibWZJJweA?token=1373599693&lang=zh_CN"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815467083,
+            "title": "为了偷懒，居然干了这种事！",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651709564&idx=1&sn=02379ef6ac674fdf9619256a38d85a46&chksm=f7b086bfc0c70fa92a08799316c96cbcf0e6e205197dc7228573843d1c7c2644b1eae0391c8b&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815482384,
+            "title": "只要能看，就能下载！这个太流弊",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651711787&idx=1&sn=983b3dbcd81c6041f7b5ba33dbdaa34f&chksm=f7b08fe8c0c706febab470e89fbb14faca5a70e643e229b434be0eab2c270aeecb3323a59555&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815505841,
+            "title": "这3个神仙功能，太顶了！",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651712306&idx=1&sn=47b6de56cf910f7c1452eb6caf14e105&chksm=f7b08df1c0c704e7fb75d95a11b4483fca3cbe3f8fb2b8c947f181b5ed934e40dede0b42f305&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815536798,
+            "title": "超级高的骚操作~~特别实用",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651717475&idx=1&sn=b05f1d41d22c74fa8dab5eea23520624&chksm=f7b099a0c0c710b67ad8ba1159cff9f99ded75861ae5dfb405ae3667357c3022548e1122bdc7&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815563735,
+            "title": "word里的一个隐藏小功能，有多少人知道？",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651718242&idx=1&sn=9474122857eeae6498bfc958661a91b8&chksm=f7b364a1c0c4edb74344d903a7e224d0c29ed48277d9a042264bd225be5d38b8c590f50cf8f6&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815577022,
+            "title": "正规途径，目前还能用的免费下载的地方，千万不能错过！",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651718718&idx=1&sn=8912c1cc73174225a3a0038d25a1542a&chksm=f7b362fdc0c4ebebf143761bd5022c6e27bf588173933580a9c235e9dd10d0be1f0696d7a930&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815591876,
+            "title": "免费资源价值千金，顺便送个小技巧",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651718923&idx=1&sn=9eda1be9defc17e5c1b6a630b24b808c&chksm=f7b363c8c0c4eade10837c66f2f8565f8f1554d6878814ca8cd7ef77d23ada2783d4d294004a&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815605627,
+            "title": "这种视频都能下载！牛X了",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651719594&idx=1&sn=efa3cfebed3f73f79959ac1e53ce44c7&chksm=f7b36169c0c4e87f23a79b192871c66b00b185434de134664b7891bac91a535c7c13a6786614&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815614554,
+            "title": "技巧+实用资源，太牛X了吧！收藏了",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651720302&idx=1&sn=e1d41c7c611af41a0b874a0a095c43a6&chksm=f7b36cadc0c4e5bb7252ad551da392ae67254cdea308b504e11890f0624f58afd67a24c23119&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815621847,
+            "title": "生活实用技巧，你肯定能用到",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651720543&idx=1&sn=360c4f6b64db1a58a15605356e9190cd&chksm=f7b36d9cc0c4e48a01dc84e2bb5c4265cbc7c55c8ba89f3e70ad18a7671204edcdb8bad6ee46&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815630428,
+            "title": "这都能下载？且用且珍",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651721447&idx=1&sn=984c662eaf15b08c307d76868ddf7522&chksm=f7b36824c0c4e132674754f3c5f7f430d60cf26a6db84d29d83e5b3f82a684e8736b3ff20b1a&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815651619,
+            "title": "公众号下载小技巧分享",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651721684&idx=1&sn=73125d0e8751d9403ba4f53bedacac7f&chksm=f7b36917c0c4e00151df3f6ffba74367554e4db0ce15584916830708d8af464aa5b655fd5948&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815659147,
+            "title": "最强无套路脚本，某文库，对不起了",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651721752&idx=1&sn=87feb991938f0e784f7fc6f406e2a1e8&chksm=f7b376dbc0c4ffcd1d03a1bd8571be3d89f0f9c46e7174ea77fc9e598e33a750481bd5eb5304&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815670041,
+            "title": "为了恶心老板，居然真做了这个工具",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651721765&idx=1&sn=ff5b95bcbd00de4f683007ee43f80190&chksm=f7b376e6c0c4fff0fe95f3e0b91b96233af0d65464e3ba1c15d2f6b84c5d75de66bd9bf17e6d&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815690455,
+            "title": "断网了，我打开了隐藏的……",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651722079&idx=1&sn=002e8be61159fde1bea5204f29934777&chksm=f7b3779cc0c4fe8adef81d63cf3832ecf729e4bbd40b0c2690645986f968ae5348e525131acc&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815700364,
+            "title": "如何下载女神，三种方法供你挑选",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651722914&idx=1&sn=3600fad11520e3be0d3a482a13ed377d&chksm=f7b37261c0c4fb77a0462e88334a218d8d4527484895b1404751f06309b2e639ebe72751d3aa&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815715263,
+            "title": "【超级实用】如何屏蔽垃圾网站",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651723630&idx=1&sn=cd4ac6de89c7e5c6c1fc92baacce4992&chksm=f7b371adc0c4f8bb0d320ec3bffb96068bb4fa5c5f59ebb3b8477251b6ab12ff8079ee36378d&scene=178&cur_album_id=2618213785052413955#rd"
+          },
+          {
+            "type": "link",
+            "addDate": 1738815721431,
+            "title": "10秒克隆声音，视频一键语音翻译，这个太牛了",
+            "icon": "https://logo.clearbit.com/mp.weixin.qq.com",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzI5NjA4MDMwMA==&mid=2651724042&idx=1&sn=41ca61898ab03bbd593b976c5a793d84&chksm=f7b37fc9c0c4f6df416de6d3df2f822b4082dca89316076f1150b82e4a2eeaca5397cbea3a94&scene=178&cur_album_id=2618213785052413955#rd"
           }
         ]
       }
