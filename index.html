@@ -72,162 +72,132 @@
 
 <body class="h-full dark:pintree-bg-gray-900 bg-white">
 
-  <!-- START: 添加的登录表单 -->
-  <div id="login-container" class="flex flex-col items-center justify-center min-h-screen px-4 text-center">
-     <!-- 可选：放你的 Logo -->
-     <img class="h-16 w-auto mb-8" src="assets/logo.svg" alt="Pintree">
-     <h1 class="text-2xl font-semibold mb-4 dark:text-white">请输入密码访问</h1>
-     <input type="password" id="password-input" placeholder="密码" class="mb-4 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-     <button id="login-button" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">登录</button>
-     <p id="error-message" class="text-red-500 mt-4"></p> <!-- 用于显示错误信息 -->
-  </div>
-  <!-- END: 登录表单结束 -->
+  <div>
+    <!-- Mobile Off-Canvas Menu -->
+    <div id="off-canvas-menu" class="relative z-50 lg:hidden hidden" role="dialog" aria-modal="true">
+      <div id="off-canvas-backdrop"
+        class="fixed inset-0 bg-gray-900/80 opacity-0 transition-opacity ease-linear duration-300"></div>
+      <div class="fixed inset-0 flex">
+        <div id="off-canvas-content"
+          class="relative mr-16 flex w-full max-w-xs flex-1 -translate-x-full transition ease-in-out duration-300 transform">
+          <!-- Close button for the off-canvas menu -->
+          <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
+            <button id="close-sidebar-button" type="button" class="-m-2.5 p-2.5">
+              <span class="sr-only">Close sidebar</span>
+              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
 
-  <!-- START: 添加的包裹层, 默认隐藏 -->
-  <div id="main-content" style="display: none;">
-
-    <!-- 你原来的主要内容从这里开始 -->
-    <div>
-      <!-- Mobile Off-Canvas Menu -->
-      <div id="off-canvas-menu" class="relative z-50 lg:hidden hidden" role="dialog" aria-modal="true">
-        <div id="off-canvas-backdrop"
-          class="fixed inset-0 bg-gray-900/80 opacity-0 transition-opacity ease-linear duration-300"></div>
-        <div class="fixed inset-0 flex">
-          <div id="off-canvas-content"
-            class="relative mr-16 flex w-full max-w-xs flex-1 -translate-x-full transition ease-in-out duration-300 transform">
-            <!-- Close button for the off-canvas menu -->
-            <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
-              <button id="close-sidebar-button" type="button" class="-m-2.5 p-2.5">
-                <span class="sr-only">Close sidebar</span>
-                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                  aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+          <!-- Off-canvas Sidebar content -->
+          <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white dark:pintree-bg-gray-900 px-6 pb-4">
+            <div class="flex h-16 shrink-0 items-center">
+              <img class="pl-2 h-8 w-auto" src="assets/logo.svg" alt="Pintree">
+              <a href="" class="ml-4 font-extrabold text-2xl dark:text-white">Laoygzs</a>
             </div>
-
-            <!-- Off-canvas Sidebar content -->
-            <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white dark:pintree-bg-gray-900 px-6 pb-4">
-              <div class="flex h-16 shrink-0 items-center">
-                <img class="pl-2 h-8 w-auto" src="assets/logo.svg" alt="Pintree">
-                <a href="" class="ml-4 font-extrabold text-2xl dark:text-white">Laoygzs</a>
-              </div>
-              <div id="sidebar-2" class="flex flex-1 flex-col">
-                <!-- Sidebar content will be injected here -->
-              </div>
+            <div id="sidebar-2" class="flex flex-1 flex-col">
+              <!-- Sidebar content will be injected here -->
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Static Sidebar for Desktop -->
-      <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-60 lg:flex-col">
-        <div
-          class="flex flex-col border-r border-gray-200 dark:pintree-border-gray-800 bg-white px-4 h-full font-semibold dark:pintree-bg-gray-900">
-          <div class="flex p-0 h-16 shrink-0 items-center">
-            <img class="pl-2 h-8 w-auto" src="assets/logo.svg" alt="Pintree">
-            <a href="" class="ml-4 font-extrabold text-2xl dark:text-white">Laoygzs</a>
-          </div>
-          <div class="flex flex-1 flex-col overflow-y-auto no-scrollbar p-1 cursor-pointer">
-            <div id="sidebar" class="flex flex-1 flex-col">
-              <ul id="navigation" class="space-y-1">
-                <!-- Navigation items will be inserted here -->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Main Content Area -->
-      <div class="lg:pl-60 dark:pintree-bg-gray-900 flex flex-col min-h-screen">
-        <div
-          class="items-center justify-between sticky top-0 z-40 flex h-16 shrink-0 gap-x-4 border-b border-gray-200 dark:pintree-border-gray-800 bg-white dark:pintree-bg-gray-900 px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
-          <div class="h-full items-center flex flex-1 gap-x-4 self-stretch lg:gap-x-6 justify-between">
-              <!-- Mobile menu button -->
-             <button id="open-sidebar-button" type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
-                <span class="sr-only">Open sidebar</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </button>
-
-             <!-- Separator -->
-             <div class="h-6 w-px bg-gray-900/10 lg:hidden" aria-hidden="true"></div>
-
-            <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6 justify-between">
-                <!-- Original Search and Theme button area -->
-                 <div class="flex gap-x-4 justify-between items-center flex-1"> <!-- Modified: added items-center and flex-1 -->
-                    <div class="hidden lg:block relative w-72 h-full"> <!-- Modified: removed items-center justify-between -->
-                        <button id="searchButton" class="absolute inset-y-0 left-0 flex items-center pl-2 text-gray-400 rounded"> <!-- Modified: flex, items-center, pl-2 -->
-                            <svg class="pointer-events-none h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <input id="searchInput" type="search" class="text-sm text-gray-900 dark:text-gray-400 pl-8 h-full w-full border-0 focus:outline-none focus:ring-0 dark:pintree-bg-gray-900" placeholder="Search..."> <!-- Modified: w-full -->
-                        <button id="clearSearchButton" class="absolute inset-y-0 right-0 flex items-center pr-4 text-sm text-gray-500 rounded hidden">Clear</button> <!-- Modified: absolute positioning -->
-                    </div>
-                    <a href="" class="lg:hidden ml-4 font-extrabold text-2xl dark:text-white">Laoygzs</a>
-                 </div>
-
-                 <div class="relative">
-                   <button id="themeToggleButton" type="button" aria-label="Switch theme"
-                     class="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:pintree-bg-gray-900 dark:ring-white/10 dark:hover:ring-white/20">
-                     <svg id="sunIcon" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                       aria-hidden="true"
-                       class="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600">
-                       <path
-                         d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z">
-                       </path>
-                       <path
-                         d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
-                         fill="none"></path>
-                     </svg>
-                     <svg id="moonIcon" viewBox="0 0 24 24" aria-hidden="true"
-                       class="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
-                       <path
-                         d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                     </svg>
-                   </button>
-                 </div>
-               </div>
-
-          </div>
-        </div>
-
-        <!-- Main content area -->
-        <main class="mt-4 dark:pintree-bg-gray-900 flex-grow">
-          <div id="loading-spinner" class="flex justify-center items-center h-full">
-            <div class="loader ease-linear rounded-full border-2 border-t-2 border-gray-400 h-6 w-6"></div>
-          </div>
-          <div id="breadcrumbs" class="mt-2 px-6 text-sm text-gray-400 flex justify-between items-center">
-            <div id="breadcrumbs-path" class="">
-              <!-- Breadcrumbs will be inserted here -->
-            </div>
-          </div>
-          <div id="bookmarks" class="grid gap-6 p-6">
-            <!-- Bookmark cards will be inserted here -->
-          </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="bg-white w-full dark:pintree-bg-gray-900">
-          <div class="mx-auto px-6 py-6 md:flex md:items-center md:justify-between lg:px-8">
-            <div class="mt-8 md:order-1 md:mt-0">
-              <p class="text-center text-xs leading-5 text-gray-500 dark:text-gray-400 flex justify-center items-center">
-                &copy; <span id="currentYear"></span>&nbsp;Laoygzs
-              </p>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <!-- Main Content Area wrapper END -->
     </div>
-    <!-- 你原来的主要内容在这里结束 -->
 
-  </div> <!-- END: 包裹层结束 -->
+    <!-- Static Sidebar for Desktop -->
+    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-60 lg:flex-col">
+      <div
+        class="flex flex-col border-r border-gray-200 dark:pintree-border-gray-800 bg-white px-4 h-full font-semibold dark:pintree-bg-gray-900">
+        <div class="flex p-0 h-16 shrink-0 items-center">
+          <img class="pl-2 h-8 w-auto" src="assets/logo.svg" alt="Pintree">
+          <a href="" class="ml-4 font-extrabold text-2xl dark:text-white">Laoygzs</a>
+        </div>
+        <div class="flex flex-1 flex-col overflow-y-auto no-scrollbar p-1 cursor-pointer">
+          <div id="sidebar" class="flex flex-1 flex-col">
+            <ul id="navigation" class="space-y-1">
+              <!-- Navigation items will be inserted here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Original script for bookmarks and UI -->
+    <!-- Main Content Area -->
+    <div class="lg:pl-60 dark:pintree-bg-gray-900 flex flex-col min-h-screen">
+      <div
+        class="items-center justify-between sticky top-0 z-40 flex h-16 shrink-0 gap-x-4 border-b border-gray-200 dark:pintree-border-gray-800 bg-white dark:pintree-bg-gray-900 px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+        <div class="h-full items-center flex flex-1 gap-x-4 self-stretch lg:gap-x-6 justify-between">
+          <div class="flex gap-x-4 justify-between">
+            <img class="pl-2 h-8 w-auto lg:hidden" src="assets/logo.svg" alt="Pintree">
+            <div class="hidden lg:block relative w-72 h-full items-center justify-between">
+              <button id="searchButton" class="absolute h-full text-gray-400 rounded">
+                <svg class="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-gray-400" viewBox="0 0 20 20"
+                  fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <input id="searchInput" type="search"
+                class="text-sm text-gray-900 dark:text-gray-400 pl-8 h-full border-0 focus:outline-none focus:ring-0 dark:pintree-bg-gray-900"
+                placeholder="Search...">
+              <button id="clearSearchButton" class="text-sm text-gray-500 mr-4 rounded hidden">Clear</button>
+            </div>
+          </div>
+          <a href="" class="lg:hidden ml-4 font-extrabold text-2xl dark:text-white">Laoygzs</a>
+          <div class="relative">
+            <button id="themeToggleButton" type="button" aria-label="Switch theme"
+              class="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:pintree-bg-gray-900 dark:ring-white/10 dark:hover:ring-white/20">
+              <svg id="sunIcon" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true"
+                class="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600">
+                <path
+                  d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z">
+                </path>
+                <path
+                  d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
+                  fill="none"></path>
+              </svg>
+              <svg id="moonIcon" viewBox="0 0 24 24" aria-hidden="true"
+                class="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500">
+                <path
+                  d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content area -->
+      <main class="mt-4 dark:pintree-bg-gray-900 flex-grow">
+        <div id="loading-spinner" class="flex justify-center items-center h-full">
+          <div class="loader ease-linear rounded-full border-2 border-t-2 border-gray-400 h-6 w-6"></div>
+        </div>
+        <div id="breadcrumbs" class="mt-2 px-6 text-sm text-gray-400 flex justify-between items-center">
+          <div id="breadcrumbs-path" class="">
+            <!-- Breadcrumbs will be inserted here -->
+          </div>
+        </div>
+        <div id="bookmarks" class="grid gap-6 p-6">
+          <!-- Bookmark cards will be inserted here -->
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-white w-full dark:pintree-bg-gray-900">
+        <div class="mx-auto px-6 py-6 md:flex md:items-center md:justify-between lg:px-8">
+          <div class="mt-8 md:order-1 md:mt-0">
+            <p class="text-center text-xs leading-5 text-gray-500 dark:text-gray-400 flex justify-center items-center">
+              &copy; <span id="currentYear"></span>&nbsp;Laoygzs
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Variables for sidebar elements
@@ -240,16 +210,6 @@
       // Function to open the sidebar
       const openSidebar = () => {
         offCanvasMenu.classList.remove('hidden');
-        // Clone navigation for mobile menu if not already present
-        if (!document.getElementById('sidebar-2').querySelector('#navigation')) {
-             var navigationClone = document.getElementById('navigation').cloneNode(true);
-             // Ensure the clone also has an ID for potential targeting, though direct clone manipulation is fine
-             navigationClone.id = 'navigation-mobile'; // Give it a unique ID if needed
-             document.getElementById('sidebar-2').appendChild(navigationClone);
-             // Re-attach event listeners to the cloned navigation items
-             attachNavigationListeners(navigationClone);
-         }
-
         setTimeout(() => {
           offCanvasBackdrop.classList.add('opacity-100');
           offCanvasContent.classList.add('translate-x-0');
@@ -262,61 +222,15 @@
         offCanvasContent.classList.remove('translate-x-0');
         setTimeout(() => {
           offCanvasMenu.classList.add('hidden');
-           // Optionally remove the cloned navigation to reset state if needed
-           const mobileNav = document.getElementById('sidebar-2').querySelector('#navigation-mobile');
-           if (mobileNav) {
-               // mobileNav.remove(); // Uncomment if you want to remove it on close
-           }
         }, 300); // Match the duration of the transition
       };
 
-        // Helper function to re-attach listeners (needed for cloned elements)
-       function attachNavigationListeners(container) {
-            const navItems = container.querySelectorAll('li');
-            navItems.forEach(navItem => {
-                 // Find the original folder data this nav item corresponds to - this is tricky without storing data on the element
-                 // Simplified: Assume click handlers need re-binding based on structure/text
-                 const linkText = navItem.querySelector('a')?.innerText;
-                 const subList = navItem.nextElementSibling?.tagName === 'UL' ? navItem.nextElementSibling : null;
-                 const toggleIcon = navItem.querySelector('.transform.transition-transform'); // Assuming this selector targets the icon
-
-                 if (linkText) {
-                      // Re-create the click logic - This part needs careful mapping back to your data structure
-                      navItem.onclick = (e) => {
-                           e.stopPropagation();
-                           // Find the corresponding folder data based on linkText or a data attribute (if you add one)
-                           // Example: findFolderData(linkText); // You need to implement findFolderData
-
-                           // Simplified behavior: Toggle sublist if exists
-                           if (subList) {
-                                subList.classList.toggle('hidden');
-                                if (toggleIcon) toggleIcon.classList.toggle('rotate-90');
-                           }
-                           // Add logic to render bookmarks for this folder
-                           // Example: renderBookmarksForFolder(folderData, path); // You need to implement this
-
-                           // Close sidebar after clicking an item in mobile view
-                           closeSidebar();
-                      };
-                 }
-            });
-       }
-
-
       // Event listeners for open and close buttons
-      // Ensure openSidebarButton exists before adding listener
-      if (openSidebarButton) {
-         openSidebarButton.addEventListener('click', openSidebar);
-      }
-      if (closeSidebarButton) {
-         closeSidebarButton.addEventListener('click', closeSidebar);
-      }
-       if (offCanvasBackdrop) {
-         offCanvasBackdrop.addEventListener('click', closeSidebar); // Close sidebar when clicking on the backdrop
-       }
+      openSidebarButton.addEventListener('click', openSidebar);
+      closeSidebarButton.addEventListener('click', closeSidebar);
+      offCanvasBackdrop.addEventListener('click', closeSidebar); // Close sidebar when clicking on the backdrop
+    });
 
-
-    // --- Keep the rest of your original bookmark/UI script here ---
     // Search functionality
     function searchBookmarks(query) {
       fetch('json/pintree.json')
@@ -324,7 +238,6 @@
         .then(data => {
           const results = searchInData(data, query.toLowerCase());
           renderBookmarks(results, [{ title: 'Search Results', children: results }]);
-           document.getElementById('clearSearchButton').classList.remove('hidden');
         })
         .catch(error => console.error('Error searching bookmarks:', error));
     }
@@ -332,90 +245,50 @@
     function searchInData(data, query) {
       let results = [];
       data.forEach(item => {
-          // Check if item itself matches
-          if (item.title.toLowerCase().includes(query) || (item.url && item.url.toLowerCase().includes(query))) {
-               // Avoid adding folders themselves unless explicitly needed, focus on links or leaf nodes
-               if(item.type === 'link'){
-                   results.push(item);
-               } else if (item.type === 'folder' && !item.children) { // Include empty folders if they match
-                    // Decide if you want to include matching folders that are empty
-                    // results.push(item);
-               }
+        if (item.title.toLowerCase().includes(query)) {
+          results.push(item);
+        }
+        if (item.children) {
+          const childResults = searchInData(item.children, query);
+          if (childResults.length > 0) {
+            results = results.concat(childResults);
           }
-          // Recursively search in children if it's a folder
-          if (item.children && item.children.length > 0) {
-               const childResults = searchInData(item.children, query);
-               results = results.concat(childResults);
-          }
+        }
       });
-       // De-duplicate results based on URL or a unique ID if available
-       const uniqueResults = results.filter((item, index, self) =>
-           index === self.findIndex((t) => (
-               t.url === item.url && t.title === item.title // Simple uniqueness check
-           ))
-       );
-      return uniqueResults; // Return unique results
+      return results;
     }
+
+    document.getElementById('searchButton').addEventListener('click', () => {
+      const query = document.getElementById('searchInput').value;
+      searchBookmarks(query);
+    });
 
     // Clear search results and reset UI
     function clearSearchResults() {
-        fetch('json/pintree.json')
-            .then(response => response.json())
-            .then(data => {
-                // Re-render the initial state (e.g., the first folder's content)
-                const firstLayer = data;
-                if (firstLayer.length > 0) {
-                    const firstItem = firstLayer[0];
-                    renderNavigation(firstLayer, document.getElementById('navigation'), true, [{ title: 'Bookmark', children: firstLayer }]); // Pass path
-                    updateSidebarActiveState([{ title: 'Bookmark', children: firstLayer }, { title: firstItem.title, children: firstItem.children }]); // Update sidebar for first item
-                    renderBookmarks(firstItem.children, [{ title: 'Bookmark', children: firstLayer }, { title: firstItem.title, children: firstItem.children }]); // Render first item's content
-                } else {
-                    renderNavigation(firstLayer, document.getElementById('navigation'), true, [{ title: 'Bookmark', children: firstLayer }]);
-                    renderBookmarks(firstLayer, [{ title: 'Bookmark', children: firstLayer }]); // Render root if no items
-                }
-                document.getElementById('searchInput').value = '';
-                document.getElementById('clearSearchButton').classList.add('hidden');
-            })
-            .catch(error => console.error('Error clearing search results:', error));
+      fetch('json/pintree.json')
+        .then(response => response.json())
+        .then(data => {
+          const secondLayer = data[0].children;
+          renderNavigation(secondLayer, document.getElementById('navigation'));
+          renderBookmarks(secondLayer, [{ title: 'Bookmark', children: secondLayer }]);
+          document.getElementById('searchInput').value = '';
+          document.getElementById('clearSearchButton').classList.add('hidden');
+        })
+        .catch(error => console.error('Error clearing search results:', error));
     }
 
-    // --- Attach Search Listeners ---
-    const searchButton = document.getElementById('searchButton');
-    const searchInput = document.getElementById('searchInput');
-    const clearSearchButton = document.getElementById('clearSearchButton');
+    document.getElementById('clearSearchButton').addEventListener('click', clearSearchResults);
 
-     if (searchButton) {
-         searchButton.addEventListener('click', () => {
-             const query = searchInput.value;
-             if (query) { // Only search if there's a query
-                 searchBookmarks(query);
-             }
-         });
-     }
-
-    if (searchInput) {
-        searchInput.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter') {
-                const query = event.target.value;
-                 if (query) { // Only search if there's a query
-                     searchBookmarks(query);
-                 }
-            }
-        });
-         // Show/hide clear button based on input
-         searchInput.addEventListener('input', () => {
-             if (searchInput.value) {
-                 clearSearchButton.classList.remove('hidden');
-             } else {
-                 clearSearchButton.classList.add('hidden');
-             }
-         });
+    function searchBookmarks(query) {
+      fetch('json/pintree.json')
+        .then(response => response.json())
+        .then(data => {
+          const results = searchInData(data, query.toLowerCase());
+          renderBookmarks(results, [{ title: 'Search Results', children: results }]);
+          document.getElementById('clearSearchButton').classList.remove('hidden');
+        })
+        .catch(error => console.error('Error searching bookmarks:', error));
     }
-
-     if (clearSearchButton) {
-         clearSearchButton.addEventListener('click', clearSearchResults);
-     }
-
 
     // Create bookmark card element
     function createCard(title, url, icon) {
@@ -423,24 +296,15 @@
       card.className = 'cursor-pointer flex items-center hover:shadow-sm transition-shadow p-4 bg-white shadow-sm ring-1 ring-gray-900/5 dark:pintree-ring-gray-800 rounded-lg hover:bg-gray-100 dark:pintree-bg-gray-900 dark:hover:pintree-bg-gray-800';
       card.onclick = () => window.open(url, '_blank'); // Make the whole card clickable
 
-      const cardIconContainer = document.createElement('div');
-       cardIconContainer.className = 'w-8 h-8 mr-4 rounded-full flex-shrink-0 card-icon-bg flex items-center justify-center overflow-hidden'; // Added flex centering
-
       const cardIcon = document.createElement('img');
       cardIcon.src = icon || 'assets/default-icon.svg'; // Use provided icon or default icon
       cardIcon.alt = title;
-       // cardIcon.className = 'w-8 h-8 mr-4 rounded-full flex-shrink-0 card-icon-bg'; // Smaller size and rounded
-       cardIcon.className = 'w-full h-full object-contain'; // Ensure icon fits container
+      cardIcon.className = 'w-8 h-8 mr-4 rounded-full flex-shrink-0 card-icon-bg'; // Smaller size and rounded
 
       // Check if the image URL returns 404 and replace it with the default icon if it does
-       cardIcon.onerror = () => {
-           cardIcon.src = 'assets/default-icon.svg'; // Set default icon on error
-           // cardIcon.style.backgroundColor = '#f0f0f0'; // Optional: set a background for default icon
-       };
-
-
-       cardIconContainer.appendChild(cardIcon); // Add img to container
-
+      cardIcon.onerror = () => {
+        cardIcon.src = 'assets/default-icon.svg';
+      };
 
       const cardContent = document.createElement('div');
       cardContent.className = 'flex flex-col overflow-hidden'; // Ensure the content is hidden if too long
@@ -450,11 +314,7 @@
       cardTitle.innerText = title;
 
       // Clean URL by removing http(s) and trailing slash
-      let cleanUrl = 'No URL';
-       if (url) {
-            cleanUrl = url.replace(/^https?:\/\//, '').replace(/\/$/, '');
-       }
-
+      const cleanUrl = url.replace(/^https?:\/\//, '').replace(/\/$/, '');
 
       const cardUrl = document.createElement('p');
       cardUrl.className = 'text-xs text-gray-400 truncate';
@@ -463,310 +323,186 @@
       cardContent.appendChild(cardTitle);
       cardContent.appendChild(cardUrl); // Add URL paragraph
 
-       // card.appendChild(cardIcon);
-       card.appendChild(cardIconContainer); // Append the container instead of the icon directly
+      card.appendChild(cardIcon);
       card.appendChild(cardContent);
 
       return card;
     }
 
     // Create folder card element
-     function createFolderCard(title, children, path) {
-        const folderData = { title, children }; // Store data needed for onclick
-        const card = document.createElement('div');
-        card.className = 'folder-card text-gray rounded-lg cursor-pointer flex flex-col items-center p-2 hover:bg-gray-100 dark:hover:pintree-bg-gray-800 transition-colors duration-150'; // Added padding and hover effect
-        card.onclick = () => {
-            // Recalculate the path correctly when clicking a folder card
-            // The 'path' passed here is the *parent* path. Add the current folder to it.
-            const newPath = path.concat(folderData);
-            renderBookmarks(children, newPath);
-            updateSidebarActiveState(newPath); // Update sidebar active state
-        };
-
-      const cardIconWrapper = document.createElement('div');
-       cardIconWrapper.className = 'w-16 h-16 mb-1 flex items-center justify-center'; // Centered icon wrapper
+    function createFolderCard(title, children, path) {
+      const card = document.createElement('div');
+      card.className = 'folder-card text-gray rounded-lg cursor-pointer flex flex-col items-center';
+      card.onclick = () => {
+        const newPath = path.concat({ title, children });
+        renderBookmarks(children, newPath);
+        updateSidebarActiveState(newPath); // Update sidebar active state
+      };
 
       const cardIcon = document.createElement('div');
-       cardIcon.innerHTML = `
-           <svg viewBox="0 0 100 80" class="folder__svg w-full h-full"> <!-- Use w-full h-full -->
-             <rect x="0" y="0" width="100" height="80" class="folder__back" />
-             <rect x="15" y="8" width="70" height="60" class="paper-1" />
-             <rect x="10" y="18" width="80" height="50" class="paper-2" />
-             <rect x="0" y="10" width="100" height="70" class="folder__front" />
-             <rect x="0" y="10" width="100" height="70" class="folder__front right" />
-           </svg>
-       `;
-       // cardIcon.className = 'mb-2'; // Removed, using wrapper
-       cardIconWrapper.appendChild(cardIcon);
+      cardIcon.innerHTML = `
+        <svg viewBox="0 0 100 80" class="folder__svg">
+          <rect x="0" y="0" width="100" height="80" class="folder__back" />
+          <rect x="15" y="8" width="70" height="60" class="paper-1" />
+          <rect x="10" y="18" width="80" height="50" class="paper-2" />
+          <rect x="0" y="10" width="100" height="70" class="folder__front" />
+          <rect x="0" y="10" width="100" height="70" class="folder__front right" />
+        </svg>
+      `;
+      cardIcon.className = 'mb-2';
 
       const cardTitle = document.createElement('h2');
-      cardTitle.className = 'text-xs font-normal text-center w-full truncate dark:text-gray-400 px-1'; // Added horizontal padding
+      cardTitle.className = 'text-xs font-normal text-center w-full truncate dark:text-gray-400';
       cardTitle.innerText = title;
 
-       // card.appendChild(cardIcon);
-       card.appendChild(cardIconWrapper);
+      card.appendChild(cardIcon);
       card.appendChild(cardTitle);
 
       return card;
     }
 
-       // --- Global variable to store the full data ---
-       let fullBookmarkData = [];
-       let currentPath = []; // To keep track of the current navigation path
-
-     // Find a folder's data in the nested structure based on a path array
-     function getFolderDataByPath(pathArray, dataTree) {
-         let currentLevel = dataTree;
-         for (let i = 1; i < pathArray.length; i++) { // Start from index 1 to skip the root 'Bookmark'
-             const pathItem = pathArray[i];
-             const foundFolder = currentLevel.find(folder => folder.title === pathItem.title && folder.type === 'folder');
-             if (foundFolder && foundFolder.children) {
-                 currentLevel = foundFolder.children;
-             } else {
-                 console.error("Folder not found for path item:", pathItem);
-                 return null; // Folder not found or doesn't have children
-             }
-         }
-         // After the loop, currentLevel should be the children of the folder specified by the last item in pathArray
-         // We need the folder item itself if the last operation was finding it
-         if (pathArray.length > 1) {
-              // To get the actual folder item, we need to search one level up
-              let parentLevel = dataTree;
-               for (let i = 1; i < pathArray.length -1 ; i++){
-                    const pathItem = pathArray[i];
-                    const parentFolder = parentLevel.find(folder => folder.title === pathItem.title && folder.type === 'folder');
-                    if(parentFolder && parentFolder.children){
-                         parentLevel = parentFolder.children;
-                    } else {
-                         return null;
-                    }
-               }
-                const finalFolder = parentLevel.find(folder => folder.title === pathArray[pathArray.length -1].title && folder.type === 'folder');
-                return finalFolder; // Return the folder object itself
-
-         } else if (pathArray.length === 1 && pathArray[0].title === 'Bookmark') {
-               return { title: 'Bookmark', children: dataTree, type: 'folder' }; // Return the root representation
-         }
-
-         return null; // Should not happen if path is valid
-     }
-
-
-    // Render sidebar navigation (Modified to handle paths and active state)
+    // Render sidebar navigation
     function renderNavigation(folders, container, isFirstRender = false, path = []) {
       container.innerHTML = ''; // Clear previous content
       folders.forEach((folder, index) => {
         if (folder.type === 'folder') {
           const navItem = document.createElement('li');
-           // Store path data directly on the element for easier retrieval
-           navItem.dataset.path = JSON.stringify(path.concat({ title: folder.title, children: folder.children })); // Store the full path to this item
-
-           navItem.className = 'items-center group flex justify-between gap-x-3 rounded-md p-2 text-sm text-gray-700 dark:text-gray-400 hover:text-main-500 hover:bg-gray-50 dark:hover:pintree-bg-gray-800'; // Ensure text-sm
+          navItem.className = 'items-center group flex justify-between gap-x-3 rounded-md p-2 text-gray-700 dark:text-gray-400 hover:text-main-500 hover:bg-gray-50 dark:hover:pintree-bg-gray-800 bg-opacity-50';
 
           const navLinkContainer = document.createElement('div');
           navLinkContainer.className = 'flex items-center space-x-2 truncate';
 
           const folderIcon = document.createElement('span');
-           folderIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a2 2 0 012-2h4l2 2h7a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" /></svg>'; // Added flex-shrink-0
+          folderIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a2 2 0 012-2h4l2 2h7a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" /></svg>';
 
           const navLink = document.createElement('a');
-           navLink.className = 'flex text-sm leading-6 font-semibold dark:text-gray-400 truncate'; // Added truncate
+          navLink.className = 'flex text-sm leading-6 font-semibold dark:text-gray-400';
           navLink.innerText = folder.title;
-          navLink.href = "#"; // Add href for better accessibility/semantics
-           navLink.onclick = (e) => e.preventDefault(); // Prevent default link behavior
-
 
           navLinkContainer.appendChild(folderIcon);
           navLinkContainer.appendChild(navLink);
 
-           const hasChildren = folder.children && folder.children.filter(item => item.type === 'folder').length > 0; // Check specifically for sub-folders
-           let toggleIcon = null;
-
-           if (hasChildren) {
-               toggleIcon = document.createElement('span');
-               toggleIcon.className = 'ml-auto transform transition-transform flex-shrink-0'; // Use ml-auto to push to the right
-               toggleIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>';
-           }
+          const toggleIcon = document.createElement('span');
+          toggleIcon.className = 'ml-2 transform transition-transform';
+          toggleIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>';
 
           navItem.appendChild(navLinkContainer);
-           if (toggleIcon) {
-               navItem.appendChild(toggleIcon);
-           }
-
+          if (folder.children && folder.children.length > 0) {
+            navItem.appendChild(toggleIcon);
+          }
           container.appendChild(navItem);
 
-           // --- Click Handling ---
-           const currentItemPath = path.concat({ title: folder.title, children: folder.children });
+          if (folder.children && folder.children.length > 0) {
+            const subList = document.createElement('ul');
+            subList.className = 'ml-4 space-y-2 hidden';
+            renderNavigation(folder.children, subList, false, path.concat({ title: folder.title, children: folder.children }));
+            container.appendChild(subList);
 
-           navItem.onclick = (e) => {
-               e.stopPropagation(); // Prevent event bubbling
+            if (isFirstRender && index === 0) {
+              // Expand the first item on initial render
+              subList.classList.remove('hidden');
+              toggleIcon.classList.add('rotate-90');
+            }
 
-               // Check if this item has sub-folders to toggle
-               const subList = navItem.nextElementSibling?.tagName === 'UL' ? navItem.nextElementSibling : null;
-               if (hasChildren && subList) {
-                   subList.classList.toggle('hidden');
-                   if (toggleIcon) {
-                       toggleIcon.classList.toggle('rotate-90');
-                   }
-               }
-
-               // Always render the content of the clicked folder
-               renderBookmarks(folder.children || [], currentItemPath); // Pass empty array if no children
-               updateSidebarActiveState(currentItemPath); // Update active state based on the *clicked* item's path
-           };
-
-
-           // --- Sublist Rendering ---
-           if (hasChildren) { // Only render sublist if there are sub-folders
-               const subList = document.createElement('ul');
-               subList.className = 'ml-4 space-y-1 hidden'; // Indent and hide by default
-               renderNavigation(folder.children, subList, false, currentItemPath); // Recursive call with updated path
-               // Insert sublist *after* the current navItem li
-               navItem.insertAdjacentElement('afterend', subList);
-
-               // Expand the first item on initial render (if applicable)
-                // Modify this logic if you want different default expansion behavior
-               // if (isFirstRender && index === 0 && path.length === 1) {
-               //      subList.classList.remove('hidden');
-               //      if (toggleIcon) toggleIcon.classList.add('rotate-90');
-               // }
-           }
-
+            navItem.onclick = (e) => {
+              e.stopPropagation();
+              document.querySelectorAll('#navigation .sidebar-active').forEach(el => el.classList.remove('sidebar-active'));
+              navItem.classList.add('sidebar-active');
+              subList.classList.toggle('hidden');
+              if (subList.children.length > 0) {
+                toggleIcon.classList.toggle('rotate-90');
+              }
+              renderBookmarks(folder.children, path.concat({ title: folder.title, children: folder.children }));
+            };
+          } else {
+            navItem.onclick = (e) => {
+              e.stopPropagation();
+              document.querySelectorAll('#navigation .sidebar-active').forEach(el => el.classList.remove('sidebar-active'));
+              navItem.classList.add('sidebar-active');
+              renderBookmarks(folder.children, path.concat({ title: folder.title, children: folder.children }));
+            };
+          }
         }
       });
     }
-
 
     // Render breadcrumbs for navigation
     function renderBreadcrumbs(path) {
       const breadcrumbsPath = document.getElementById('breadcrumbs-path');
       breadcrumbsPath.innerHTML = ''; // Clear previous breadcrumbs
-       currentPath = path; // Update global current path
 
       path.forEach((item, index) => {
         const breadcrumb = document.createElement('span');
-         // Make only non-last items clickable
-         if (index < path.length - 1) {
-             breadcrumb.className = 'cursor-pointer hover:underline text-gray-500 dark:text-gray-400';
-             breadcrumb.onclick = () => {
-                 const newPath = path.slice(0, index + 1);
-                 // Find the actual folder data corresponding to this breadcrumb click
-                 const targetFolderData = getFolderDataByPath(newPath, fullBookmarkData);
-                  if (targetFolderData) {
-                       renderBookmarks(targetFolderData.children || [], newPath);
-                       updateSidebarActiveState(newPath);
-                  } else if (newPath.length === 1 && newPath[0].title === 'Bookmark') {
-                       // Handle click on root "Bookmark"
-                       renderBookmarks(fullBookmarkData, newPath);
-                       updateSidebarActiveState(newPath);
-                  }
-                 document.getElementById('searchInput').value = ''; // Clear search on breadcrumb nav
-                 document.getElementById('clearSearchButton').classList.add('hidden');
-             };
-         } else {
-             // Last item (current view) - not clickable
-             breadcrumb.className = 'text-gray-700 dark:text-white font-semibold';
-         }
-
+        breadcrumb.className = 'cursor-pointer hover:underline';
         breadcrumb.innerText = item.title;
+        breadcrumb.onclick = () => {
+          // Render bookmarks for the selected breadcrumb
+          const newPath = path.slice(0, index + 1);
+          renderBookmarks(item.children, newPath);
+          updateSidebarActiveState(newPath); // Update sidebar active state
+          document.getElementById('clearSearchButton').classList.add('hidden'); // Hide clear button when navigating through breadcrumbs
+        };
+
         breadcrumbsPath.appendChild(breadcrumb);
 
         if (index < path.length - 1) {
           const separator = document.createElement('span');
-           separator.className = 'mx-1 text-gray-400 dark:text-gray-500'; // Style separator
-          separator.innerText = '>';
+          separator.innerText = ' > ';
           breadcrumbsPath.appendChild(separator);
         }
       });
     }
 
-    // Update the active state of sidebar items based on the current path
-    function updateSidebarActiveState(activePath) {
-        document.querySelectorAll('#navigation .sidebar-active').forEach(el => el.classList.remove('sidebar-active'));
-        document.querySelectorAll('#navigation ul').forEach(ul => ul.classList.add('hidden')); // Collapse all first
-        document.querySelectorAll('#navigation .rotate-90').forEach(icon => icon.classList.remove('rotate-90')); // Reset icons
+    // Update the active state of sidebar items
+    function updateSidebarActiveState(path) {
+      document.querySelectorAll('#navigation .sidebar-active').forEach(el => el.classList.remove('sidebar-active'));
 
+      let currentNav = document.getElementById('navigation');
 
-        let currentNavContainer = document.getElementById('navigation');
-         if (!currentNavContainer) return;
+      path.forEach((item, index) => {
+        const items = currentNav.querySelectorAll('li');
+        items.forEach(navItem => {
+          const navLink = navItem.querySelector('a');
+          if (navLink && navLink.innerText === item.title) {
+            if (index === path.length - 1) {
+              navItem.classList.add('sidebar-active');
+            }
 
-
-        for (let i = 0; i < activePath.length; i++) {
-            const pathItem = activePath[i];
-             if (pathItem.title === 'Bookmark') continue; // Skip the root 'Bookmark'
-
-
-             // Find the li element corresponding to the current path item
-             // This relies on finding the 'a' tag with the correct text inside the current container
-             const listItems = Array.from(currentNavContainer.children).filter(child => child.tagName === 'LI');
-             let foundNavItem = null;
-              for (const li of listItems) {
-                  const link = li.querySelector('a');
-                   if (link && link.innerText.trim() === pathItem.title.trim()) {
-                       foundNavItem = li;
-                       break;
-                   }
+            if (index < path.length - 1) {
+              const subList = navItem.querySelector('ul');
+              if (subList) {
+                subList.classList.remove('hidden');
+                currentNav = subList;
               }
+            }
+          }
+        });
+      });
+    }
 
-
-             if (foundNavItem) {
-                 // If it's the last item in the path, mark it active
-                 if (i === activePath.length - 1) {
-                     foundNavItem.classList.add('sidebar-active');
-                 }
-
-                 // Find the next UL (sublist) associated with this item
-                  // The sublist UL is expected to be the immediate sibling *after* the LI
-                  const subList = foundNavItem.nextElementSibling;
-
-                 // If there's a sublist and we're not at the end of the path, expand it
-                 if (subList && subList.tagName === 'UL' && i < activePath.length - 1) {
-                     subList.classList.remove('hidden');
-                     const toggleIcon = foundNavItem.querySelector('.transform.transition-transform');
-                     if (toggleIcon) {
-                         toggleIcon.classList.add('rotate-90');
-                     }
-                     currentNavContainer = subList; // Move down to the sublist for the next iteration
-                 } else if (i < activePath.length -1 ) {
-                      // If we expect a sublist but don't find one, stop traversing
-                       break;
-                 }
-             } else {
-                  // If a nav item for the path segment isn't found, stop
-                   break;
-             }
-         }
-     }
-
-
-    // Show a message when no search results or empty folder
-    function showNoResultsMessage(isSearch = false) {
+    // Show a message when no search results are found
+    function showNoResultsMessage() {
       const container = document.getElementById('bookmarks');
       container.innerHTML = ''; // Clear previous content
 
       const messageContainer = document.createElement('div');
-      messageContainer.className = 'flex flex-col items-center justify-center h-64 text-center px-6'; // Added padding
+      messageContainer.className = 'flex flex-col items-center justify-center h-full';
 
-      const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-       icon.setAttribute('class', 'h-16 w-16 text-gray-400 dark:text-gray-500 mb-4'); // Adjusted styling
+      const icon = document.createElement('svg');
+      icon.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+      icon.setAttribute('class', 'h-16 w-16 text-gray-500');
       icon.setAttribute('fill', 'none');
       icon.setAttribute('viewBox', '0 0 24 24');
       icon.setAttribute('stroke', 'currentColor');
-       icon.setAttribute('stroke-width', '1'); // Thinner stroke
-       // Using a more relevant icon like folder-open or search
-       icon.innerHTML = isSearch ?
-           '<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>' :
-           '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m-1.125 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path>';
-
+      icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m9-3a9 9 0 11-18 0 9 9 0 0118 0z" />';
 
       const title = document.createElement('h2');
-      title.className = 'text-gray-600 dark:text-gray-400 text-lg font-semibold mt-2'; // Adjusted styling
-      title.innerText = isSearch ? 'No Search Results Found' : 'This Folder is Empty';
+      title.className = 'text-gray-500 text-xl font-semibold mt-4';
+      title.innerText = 'Oops, Nothing to See Here!';
 
       const message = document.createElement('p');
-      message.className = 'text-gray-500 dark:text-gray-500 mt-1 text-sm';
-       message.innerText = isSearch ? 'Try refining your search terms.' : 'Add some bookmarks or folders here!';
-
+      message.className = 'text-gray-500 mt-2';
+      message.innerText = 'Try another search or discover more cool stuff elsewhere!';
 
       messageContainer.appendChild(icon);
       messageContainer.appendChild(title);
@@ -775,119 +511,89 @@
       container.appendChild(messageContainer);
     }
 
-
-    // Render bookmarks (handles both folders and links)
+    // Render bookmarks
     function renderBookmarks(data, path) {
       const container = document.getElementById('bookmarks');
       container.innerHTML = ''; // Clear previous content
-       currentPath = path; // Update global path when rendering
 
       // Render breadcrumbs
       renderBreadcrumbs(path);
 
-       // Ensure data is an array
-       const itemsToRender = Array.isArray(data) ? data : [];
-
-
       // Separate folders and links
-       const folders = itemsToRender.filter(item => item.type === 'folder');
-       const links = itemsToRender.filter(item => item.type === 'link').sort((a, b) => (b.addDate || 0) - (a.addDate || 0)); // Handle potential missing addDate
-
+      const folders = data.filter(item => item.type === 'folder');
+      const links = data.filter(item => item.type === 'link').sort((a, b) => b.addDate - a.addDate);
 
       if (folders.length === 0 && links.length === 0) {
-           const isSearch = path.length > 0 && path[path.length - 1].title === 'Search Results';
-           showNoResultsMessage(isSearch); // Pass true if it's a search result page
+        showNoResultsMessage();
         return;
       }
 
       // Create folder section
       if (folders.length > 0) {
         const folderSection = document.createElement('div');
-         // Responsive grid columns
-         folderSection.className = 'grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 gap-4'; // Adjusted gaps and columns
+        folderSection.className = 'grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-8 2xl:grid-cols-12 gap-6';
         folders.forEach(folder => {
-           // Pass the *current* path (path of the parent) to createFolderCard
-          const card = createFolderCard(folder.title, folder.children || [], path);
+          const card = createFolderCard(folder.title, folder.children, path);
           folderSection.appendChild(card);
         });
         container.appendChild(folderSection);
       }
 
-      // Add separator line if both folders and links exist
+      // Add separator line if there are links
       if (folders.length > 0 && links.length > 0) {
         const separator = document.createElement('hr');
-         separator.className = 'my-6 border-t border-gray-200 dark:pintree-border-gray-800'; // Adjusted margin and color
+        separator.className = 'my-1 border-t-1 border-gray-200 dark:pintree-border-gray-800';
         container.appendChild(separator);
       }
 
       // Create link section
       if (links.length > 0) {
         const linkSection = document.createElement('div');
-         // Responsive grid columns
-         linkSection.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4'; // Adjusted gaps and columns
+        linkSection.className = 'grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-6';
         links.forEach(link => {
-           const card = createCard(link.title, link.url, link.icon);
+          const card = createCard(link.title, link.url, link.icon);
           linkSection.appendChild(card);
         });
         container.appendChild(linkSection);
       }
 
-        // Don't automatically update sidebar here, let clicks handle it
-        // updateSidebarActiveState(path); // Remove this line
+      // Update sidebar active state
+      updateSidebarActiveState(path);
     }
 
-    // --- Initial Fetch and Render ---
-    function initializeApp() {
-        fetch('json/pintree.json')
-            .then(response => response.json())
-            .then(data => {
-                 // Hide loading spinner
-                 const spinner = document.getElementById('loading-spinner');
-                 if (spinner) spinner.style.display = 'none';
+    // Fetch and render data
+    fetch('json/pintree.json')
+      .then(response => response.json())
+      .then(data => {
+        // Use the first layer of the data directly
+        const firstLayer = data;
+        // Render navigation using the first layer of data
+        renderNavigation(firstLayer, document.getElementById('navigation'), true);
+        // Render bookmarks using the first layer of data, starting from the Bookmark
+        renderBookmarks(firstLayer, [{ title: 'Bookmark', children: firstLayer }]);
 
-                fullBookmarkData = data; // Store the fetched data globally
-                const rootPath = [{ title: 'Bookmark', children: fullBookmarkData }];
+        // Automatically select and show the first item
+        if (firstLayer.length > 0) {
+          const firstItem = firstLayer[0];
+          updateSidebarActiveState([{ title: firstItem.title, children: firstItem.children }]);
+          renderBookmarks(firstItem.children, [{ title: 'Bookmark', children: firstLayer }, { title: firstItem.title, children: firstItem.children }]);
+        }
+      })
+      .catch(error => console.error('Error loading bookmarks:', error));
 
-                // Render initial navigation
-                renderNavigation(fullBookmarkData, document.getElementById('navigation'), true, rootPath);
+    // Search functionality on pressing Enter
+    document.getElementById('searchInput').addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        const query = event.target.value;
+        searchBookmarks(query);
+      }
+    });
 
-                // Decide initial view: either root or first folder
-                 if (fullBookmarkData.length > 0 && fullBookmarkData[0].type === 'folder') {
-                     // Show first folder content by default
-                     const firstItem = fullBookmarkData[0];
-                      const initialPath = rootPath.concat({ title: firstItem.title, children: firstItem.children });
-                     renderBookmarks(firstItem.children || [], initialPath);
-                      updateSidebarActiveState(initialPath); // Set sidebar state for the first item
-
-                       // Explicitly expand the first item in the sidebar
-                       const firstNavItem = document.getElementById('navigation')?.querySelector('li');
-                       if(firstNavItem) {
-                            const subList = firstNavItem.nextElementSibling;
-                            const toggleIcon = firstNavItem.querySelector('.transform.transition-transform');
-                             if(subList && subList.tagName === 'UL') {
-                                 subList.classList.remove('hidden');
-                                 if(toggleIcon) toggleIcon.classList.add('rotate-90');
-                             }
-                       }
-
-
-                 } else {
-                     // Show root content if no folders or first item is not a folder
-                     renderBookmarks(fullBookmarkData, rootPath);
-                      updateSidebarActiveState(rootPath); // Set sidebar state for the root
-                 }
-
-            })
-            .catch(error => {
-                 console.error('Error loading bookmarks:', error);
-                 // Optionally hide the spinner and show an error message
-                 const spinner = document.getElementById('loading-spinner');
-                 if (spinner) spinner.style.display = 'none';
-                  const bookmarksContainer = document.getElementById('bookmarks');
-                  if(bookmarksContainer) bookmarksContainer.innerHTML = '<p class="text-red-500 text-center p-6">Error loading bookmarks. Please check the console.</p>';
-            });
-    }
-
+    // Search functionality on button click
+    document.getElementById('searchButton').addEventListener('click', function () {
+      const query = document.getElementById('searchInput').value;
+      searchBookmarks(query);
+    });
 
     // Theme toggle functionality
     const themeToggleButton = document.getElementById('themeToggleButton');
@@ -897,17 +603,15 @@
     // Apply dark theme
     function applyDarkTheme() {
       document.documentElement.classList.add('dark');
-       if(sunIcon) sunIcon.classList.add('hidden');
-       if(moonIcon) moonIcon.classList.remove('hidden');
-       localStorage.setItem('theme', 'dark'); // Store preference
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.remove('hidden');
     }
 
     // Apply light theme
     function applyLightTheme() {
       document.documentElement.classList.remove('dark');
-       if(sunIcon) sunIcon.classList.remove('hidden');
-       if(moonIcon) moonIcon.classList.add('hidden');
-       localStorage.setItem('theme', 'light'); // Store preference
+      sunIcon.classList.remove('hidden');
+      moonIcon.classList.add('hidden');
     }
 
     // Toggle theme between dark and light
@@ -919,120 +623,72 @@
       }
     }
 
-    // Check local storage or system preference for theme on load
-    function initializeTheme() {
-        const savedTheme = localStorage.getItem('theme');
-         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.addEventListener('DOMContentLoaded', () => {
+      // Fetch and render data
+      fetch('json/pintree.json')
+        .then(response => response.json())
+        .then(data => {
+          // Hide loading spinner
+          document.getElementById('loading-spinner').style.display = 'none';
 
-        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-            applyDarkTheme();
-        } else {
-            applyLightTheme();
-        }
+          // Use the first layer of the data directly
+          const firstLayer = data;
+          // Render navigation using the first layer of data
+          renderNavigation(firstLayer, document.getElementById('navigation'), true);
+          // Render bookmarks using the first layer of data, starting from the Bookmark
+          renderBookmarks(firstLayer, [{ title: 'Bookmark', children: firstLayer }]);
 
-         // Listen for changes in the system color theme preference
-         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-              // Only apply system preference if no theme is explicitly saved
-              if (!localStorage.getItem('theme')) {
-                   applyColorTheme(event.matches ? 'dark' : 'light');
-              }
-         });
+          // Automatically select and show the first item
+          if (firstLayer.length > 0) {
+            const firstItem = firstLayer[0];
+            updateSidebarActiveState([{ title: firstItem.title, children: firstItem.children }]);
+            renderBookmarks(firstItem.children, [{ title: 'Bookmark', children: firstLayer }, { title: firstItem.title, children: firstItem.children }]);
+          }
+        })
+        .catch(error => {
+          console.error('Error loading bookmarks:', error);
+          // Optionally hide the spinner and show an error message
+          document.getElementById('loading-spinner').style.display = 'none';
+        });
+    });
 
-          // Add listener to the button
-         if (themeToggleButton) {
-             themeToggleButton.addEventListener('click', toggleTheme);
-         }
+    // Event listener for theme toggle button
+    themeToggleButton.addEventListener('click', toggleTheme);
+
+    // Automatically apply theme according to system theme settings
+    function applyColorTheme(theme) {
+      if (theme === 'dark') {
+        applyDarkTheme();
+      } else {
+        applyLightTheme();
+      }
     }
 
+    // Detect initial color theme
+    const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyColorTheme(prefersDarkTheme ? 'dark' : 'light');
 
-    // --- Call Initializers after DOM is ready ---
-     // Initialize theme first
-     initializeTheme();
-     // Then initialize the main app (fetching data, rendering)
-     // initializeApp(); // This is now called by the password script upon successful login
-
-    // --- END of original UI script ---
+    // Listen for changes in the color theme
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+      applyColorTheme(event.matches ? 'dark' : 'light');
     });
+
+    // Open mobile menu
+    document.getElementById('open-sidebar-button').addEventListener('click', function () {
+      var navigation = document.getElementById('navigation').cloneNode(true);
+      document.getElementById('sidebar-2').appendChild(navigation);
+    });
+
   </script>
 
-  <!-- Script to update the year in the footer -->
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
       const yearElement = document.getElementById('currentYear');
-      // Check if element exists before setting textContent
-      if (yearElement) {
-        const currentYear = new Date().getFullYear();
-        yearElement.textContent = currentYear;
-      }
+      const currentYear = new Date().getFullYear();
+      yearElement.textContent = currentYear;
     });
   </script>
 
-  <!-- START: 添加的密码验证脚本 -->
-  <script>
-    // 
-    const correctPassword = "2025"; // 
-    // ----------------------------------
-
-    // 获取需要操作的 HTML 元素
-    const loginContainer = document.getElementById('login-container');
-    const mainContent = document.getElementById('main-content');
-    const passwordInput = document.getElementById('password-input');
-    const loginButton = document.getElementById('login-button');
-    const errorMessage = document.getElementById('error-message'); // 获取显示错误信息的 <p> 元素
-
-    // 尝试登录的函数
-    function attemptLogin() {
-      const enteredPassword = passwordInput.value; // 获取用户输入的密码
-      if (enteredPassword === correctPassword) {
-        // 密码正确
-        loginContainer.style.display = 'none'; // 隐藏登录表单
-        mainContent.style.display = 'block';  // 显示主要内容
-        errorMessage.textContent = ""; // 清空错误信息
-
-        // **** 重要：在这里调用你的主应用初始化函数 ****
-        if (typeof initializeApp === 'function') {
-            initializeApp();
-        } else {
-            console.error("initializeApp function not found! Main content might not load correctly.");
-        }
-        // ****************************************
-
-      } else {
-        // 密码错误
-        errorMessage.textContent = "密码错误，请重试。"; // 显示错误提示
-        passwordInput.value = ""; // 清空密码输入框
-        passwordInput.focus(); // 让光标重新聚焦到密码输入框
-      }
-    }
-
-    // 给登录按钮添加点击事件监听
-    if (loginButton) {
-        loginButton.addEventListener('click', attemptLogin);
-    }
-
-
-    // 给密码输入框添加键盘事件监听（按回车键也能登录）
-    if (passwordInput) {
-        passwordInput.addEventListener('keypress', function(event) {
-          // 检查按下的键是否是 Enter 键
-          if (event.key === 'Enter') {
-            event.preventDefault(); // 阻止可能的默认行为（比如表单提交）
-            attemptLogin(); // 调用登录函数
-          }
-        });
-
-         // 页面加载后，自动聚焦到密码输入框，方便用户直接输入
-         // Needs to wait slightly for the rest of the DOM potentially
-         setTimeout(() => {
-              passwordInput.focus();
-         }, 100);
-    } else {
-        console.error("Password input field not found.");
-    }
-
-
-  </script>
-  <!-- END: 密码验证脚本结束 -->
-
 </body>
+
 </html>
